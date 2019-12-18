@@ -2,26 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Language Syntax Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="index.css" type="text/css" rel="stylesheet">
-    <script src="index.js" type="application/javascript"></script>
+    <script src="index.js" type="module"></script>
 </head>
 <body>
 <div class="d-flex">
     <div class="d-flex-item">
         <div>
             <h3>Soure code</h3>
-            <button onclick="submit()">Submit</button>
-            <button onclick="pasteCodeBlock()">Paste sample code block</button>
+            <button class="analyze-btn">Analyze</button>
+            <button class="explore-btn">Explore</button>
+            <button class="paste-code-btn">Paste sample code block</button>
         </div>
         <label>
-            <textarea class="code-input" style="width: 80%; height: 1000px"></textarea>
+            <textarea class="code-input"></textarea>
         </label>
+        <!--<div class="code-input2" contenteditable="true"></div>-->
     </div>
     <div class="d-flex-item">
         <h3>Syntax</h3>
         <ul class="nodes-container"></ul>
     </div>
 </div>
+<template id="ast-node">
+    <div class="list-item">
+        <div>
+            Type: <span class="node-type"></span>
+        </div>
+        <div>
+            <a class="doc-link" href="">See documentation</a>
+        </div>
+    </div>
+</template>
 </body>
 </html>

@@ -12,3 +12,23 @@ module.exports = [
         docUrl: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations'
     }
 ];
+
+/*
+entering Program
+entering FunctionDeclaration
+entering Identifier
+entering BlockStatement
+entering VariableDeclaration
+entering VariableDeclarator
+entering Identifier
+entering Literal
+entering IfStatement
+entering Identifier
+entering BlockStatement
+entering ExpressionStatement
+entering CallExpression
+entering MemberExpression
+entering Identifier
+entering Identifier
+entering Literal
+*/

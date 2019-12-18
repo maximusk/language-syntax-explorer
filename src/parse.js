@@ -12,7 +12,7 @@ module.exports = function (code) {
             if (index !== -1) {
                 matched.push(node);
             }
-            // console.log(`entering ${node.type}, range ${node.range}, location ${JSON.stringify(node.loc)}`);
+            console.log(`entering ${node.type}`);
         }
     });
 
