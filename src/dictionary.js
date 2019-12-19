@@ -10,25 +10,31 @@ module.exports = [
         type: 'variable-declaration,',
         description: 'JavaScript has three kinds of variable declarations',
         docUrl: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations'
+    },
+    {
+        astNodeType: 'IfStatement',
+        type: 'If Statement',
+        description: 'The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.',
+        docUrl: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else'
     }
 ];
 
 /*
-entering Program
-entering FunctionDeclaration
-entering Identifier
-entering BlockStatement
-entering VariableDeclaration
-entering VariableDeclarator
-entering Identifier
-entering Literal
-entering IfStatement
-entering Identifier
-entering BlockStatement
-entering ExpressionStatement
-entering CallExpression
-entering MemberExpression
-entering Identifier
-entering Identifier
-entering Literal
+Program
+FunctionDeclaration
+Identifier
+BlockStatement
+VariableDeclaration
+VariableDeclarator
+Identifier
+Literal
+IfStatement
+Identifier
+BlockStatement
+ExpressionStatement
+CallExpression
+MemberExpression
+Identifier
+Identifier
+Literal
 */
