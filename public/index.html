@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Language Syntax Explorer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" type="text/css" rel="stylesheet">
-    <script src="index.js" type="module"></script>
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <script src="js/index.js" type="module"></script>
 </head>
 <body>
-<div class="d-flex">
-    <div class="d-flex-item">
-        <div>
+<div class="container">
+    <div class="top d-flex">
+        <div class="d-flex-item">
             <h3>Soure code</h3>
-            <button class="analyze-btn">Analyze</button>
-            <button class="explore-btn">Explore</button>
-            <button class="paste-code-btn">Paste sample code block</button>
+            <div class="btn-container">
+                <button class="btn btn-info paste-code-btn">Paste sample code block</button>
+                <button class="btn btn-info analyze-btn">Analyze</button>
+                <button class="btn btn-info explore-btn">Explore</button>
+            </div>
         </div>
-        <label>
-            <textarea class="code-input"></textarea>
-        </label>
-        <!--<div class="code-input2" contenteditable="true"></div>-->
+        <div class="d-flex-item">
+            <h3>Language constructions</h3>
+        </div>
     </div>
-    <div class="d-flex-item">
-        <h3>Syntax</h3>
-        <ul class="nodes-container"></ul>
+    <div class="content d-flex">
+        <div class="d-flex-item">
+            <label>
+                <textarea class="code-input"></textarea>
+            </label>
+        </div>
+        <div class="d-flex-item">
+            <ul class="nodes-container"></ul>
+        </div>
     </div>
 </div>
 <template id="ast-node">
@@ -31,6 +37,7 @@
         <div>
             Type: <span class="node-type"></span>
         </div>
+        <p class="syntax-description"></p>
         <div>
             <a class="doc-link" href="">See documentation</a>
         </div>

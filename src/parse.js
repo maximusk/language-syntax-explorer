@@ -12,7 +12,6 @@ module.exports = function (code) {
             if (index !== -1) {
                 matched.push(node);
             }
-            console.log(`entering ${node.type}`);
         }
     });
 

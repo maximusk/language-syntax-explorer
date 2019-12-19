@@ -1,0 +1,7 @@
+.d-flex {
+    display: flex;
+}
+
+.d-flex-item {
+    flex: 1 1 50%;
+}
